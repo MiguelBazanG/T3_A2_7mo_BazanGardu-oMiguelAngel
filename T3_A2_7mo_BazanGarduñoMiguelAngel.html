@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/procedimiento.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>CURP</legend>
+        <form action="procesar.php" method="POST">
+            <label>Nombre(s):</label> 
+            <input type="text" name="caja_nom" id="caja_nom"/>
+            <input type="button" value="ver" onclick="v()"/>
+            <br><br>
+            <label>Primer Apellido:</label> 
+            <input type="text" name="caja_apP" id="caja_apP" maxlength="10" size="10" placeholder="solo letras"/>
+<br><br>
+            <label>Segundo Apellido:</label> 
+            <input type="text" name="caja_apS" id="caja_apS" maxlength="10" size="10" placeholder="solo letras"/>
+<br><br>
+            <label>Día De Nacimiento:</label> 
+            <input type="number" name="caja_dnac" id="caja_dnac" maxlength="10" size="10" placeholder="Día" min="1" max="31"/>
+<br><br>
+            <label>Mes De Nacimiento:</label> 
+            <input type="number" name="caja_mnac" id="caja_mnac" maxlength="10" size="10" placeholder="Mes" min="1" max="12"/>
+<br><br>
+            <label>Año De Nacimiento:</label> 
+            <input type="number" name="caja_anac" id="caja_anac" maxlength="10" size="10" placeholder="Año" min="1850"/>
+<br><br>
+            <label>Sexo*:</label> 
+            <input type="text" name="caja_sex" id="caja_sex" maxlength="10" size="10" placeholder="solo letras"/>
+<br><br>
+            <label>Estado*:</label> 
+            <input type="text" name="caja_es" id="caja_es" maxlength="10" size="10" placeholder="solo letras"/>
+    
+            
+    
+            
+            
+            <br><hr>
+            <input type="button" value="Generar Curp" onclick="v()">
+            <label id="res">Curp</label>
+            
+     
+        </form>
+    </fieldset>
+<br><br>
+
+    <fieldset>
+        <legend>Convertidor Decimal a:</legend>
+
+        <label>Número Decimal:</label> 
+            <input type="text" name="caja_nuD" id="caja_nuD" maxlength="10" size="10" placeholder="Número Decimal"/>
+            <br><br>
+            <input type="button" value="binario" onclick="dab()">
+            <label> = </label> 
+            <input type="text" name="caja_b" id="caja_b" maxlength="10" size="10" />
+            <br><br>
+            <input type="button" value="Octal" onclick="dao()">
+            <label> = </label> 
+            <input type="text" name="caja_o" id="caja_o" maxlength="10" size="10" />
+            <br><br>
+            <input type="button" value="Hexadecimal" onclick="">
+            <label> = </label> 
+            <input type="text" name="caja_h" id="caja_h" maxlength="10" size="10" />
+            <br><br>
+            
+
+
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Ejercicio 03</legend> 
+        <label>Cadena:</label>
+        
+            <input type="text" name="caja_cad" id="caja_cad" maxlength="10" size="10" placeholder="cadena"/>
+            <br><br>
+            <label>Cantidad de vocales:</label>
+            <input type="text" name="caja_cv" id="caja_cv" maxlength="10" size="10" />
+            <br><br>
+            <label>Cantidad de consonantes:</label>
+            <input type="text" name="caja_cc" id="caja_cc" maxlength="10" size="10" />
+            <br><br>
+            <label>Cadena:</label>
+            <input type="text" name="caja_clc" id="caja_clc" maxlength="10" size="10"/>
+            <br><br>
+            <label>Cadena como cadena camel case especial:</label>
+            <input type="text" name="caja_cce" id="caja_cce" maxlength="10" size="10"/><br>
+
+            <input type="button" value="Ejecutar" onclick="voc()">
+            <label></label> 
+            <br><br>
+            
+    </fieldset>
+
+</body>
+</html>
